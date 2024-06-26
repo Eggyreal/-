@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>智能交通监控管理系统</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: left;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+        .nav-item {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .nav-item:hover {
+            background-color: #555;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .container {
+            display: flex;
+            padding: 10px;
+        }
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            padding-right: 10px;
+        }
+        .right-column {
+            width: 75%;
+            padding-left: 10px;
+        }
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .section img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .license-plate, .traffic-light {
+            height: 45%;
+        }
+        .real-time-monitoring {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .real-time-monitoring img {
+            width: 48%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .info {
+            background-color: #e0f7e0;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .refresh-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0080ff;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>智能交通监控管理系统</div>
+        <div class="nav">
+            <a href="#" class="nav-item">目标识别</a>
+            <a href="#" class="nav-item">数据查询</a>
+            <a href="#" class="nav-item">用户修改</a>
+        </div>
+        <div class="user-info">
+            <img src="1719374654336.png" alt="用户头像">
+            <div>Dat Kids</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-column">
+            <div class="section license-plate">
+                <h3>车牌识别</h3>
+                <img src="license_plate.png" alt="车牌">
+                <p>车牌: 浙G·00001</p>
+            </div>
+            <div class="section traffic-light">
+                <h3>红绿灯检测</h3>
+                <img src="traffic_light.png" alt="红绿灯">
+                <p>红灯</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="real-time-monitoring">
+                <h3>实时监控</h3>
+                <div class="info">
+                    <p>信息识别</p>
+                    <p>车辆: 4</p>
+                    <p>限速: 80</p>
+                    <p>车速检测:</p>
+                    <p style="color: green;">62</p>
+                    <p style="color: green;">74</p>
+                    <p style="color: red;">86</p>
+                    <p style="color: green;">50</p>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <img src="monitor_1.png" alt="监控1">
+                    <img src="monitor_2.png" alt="监控2">
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <img src="monitor_3.png" alt="监控3">
+                    <img src="monitor_4.png" alt="监控4">
+                </div>
+                <div class="refresh-button">刷新实时数据</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
